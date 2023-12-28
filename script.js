@@ -5,6 +5,8 @@ const title = document.querySelector(".title");
 const bodyElement = document.body;
 const container = document.querySelector(".container");
 const gif = document.querySelector("#gif")
+let size = 1;
+
 // Image sources (unused in current code, but kept for potential future use)
 const imgSrc = {
     initial: "https://media.tenor.com/AKHj5e7v4pcAAAAi/cute.gif",
@@ -33,6 +35,8 @@ function movenoBtnToRandomPosition() {
     const newY = Math.random() * windowHeight;
     noBtn.style.left = newX + 'px';
     noBtn.style.top = newY + 'px';
+    noBtn.style.transform = `scale(${size})`;
+    size -= 0.02
 }
 
 function handleNoClick() {
@@ -41,7 +45,7 @@ function handleNoClick() {
     gif.src = imgSrc.ifNo;
     yesBtn.innerText = "Please say yes!!";
     yesBtn.classList.add("flikker")
-    
+
     noBtn.remove();
 
 }
