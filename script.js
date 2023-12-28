@@ -1,3 +1,4 @@
+
 // Selecting DOM elements
 const noBtn = document.querySelector('.btn-no-wrapper');
 const yesBtn = document.querySelector('#yes');
