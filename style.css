@@ -20,7 +20,7 @@ display: grid;
 place-items: center;
 min-height: 100vh;
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewport="0 0 32 32" style="fill:black;font-size:24px;"><text y="50%" x="50%" dy=".35em" text-anchor="middle" style="font-family:Arial;">🥲</text></svg>'), auto;
-    
+    transition: .2s ;
 
 }
 .container {
@@ -93,4 +93,31 @@ animation: slide .5s alternate infinite ease-in-out;
         translate: 10px 10px;
     }
     
+}
+.end-message{
+    margin:auto;
+    /* background:var(--black); */
+    width:100vw;
+    color:var(--white);
+        padding:1rem; 
+        display:flex;
+    flex-direction:column;
+    gap:.8rem;
+    margin-bottom:0;
+    
+}
+.end-message p{
+    
+    text-align:center;
+    font-size: 18px;
+}
+.end-message p:first-child {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.end-message a{
+    color:var(--pink);
+    text-decoration:none;
+    font-size:24px;
 }
