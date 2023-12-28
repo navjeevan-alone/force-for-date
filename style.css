@@ -74,22 +74,8 @@ button.btn{
 button#exclusiv {
     transition: top 0.3s, left 0.3s;
 }
+ 
 
-.btn#yes{
-    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
-animation: slide .5s alternate infinite ease-in-out;
-}
-/* @keyframes slide {
-    0%{
-        transform: 0 0 ;
-        translate: 0 0 ;
-    }
-    100%{
-        transform: 10px 10px;
-        translate: 10px 10px;
-    }
-    
-} */
 .end-message{
     margin:auto;
     /* background:var(--black); */

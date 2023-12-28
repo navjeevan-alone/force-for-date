@@ -1,5 +1,6 @@
 
 const noBtn = document.querySelector('.btn-no-wrapper');
+
 const title = document.querySelector(".title")
 const bodyElement = document.body;
 const container = document.querySelector(".container")
@@ -8,9 +9,11 @@ const endMessageStr = `<p>Jst developer things!!!</p>
       <p><i>by</i></p>
       <p>The LEGEND</p>
       <p>
-        <a href="https://www.instagram.com/navjeevanalone1/" target="_blank"
-          >@navjeevanalone1</a  >
-      </p>`;
+      <a  class="btn btn-sm" href="https://www.instagram.com/navjeevanalone1/" target="_blank"
+        >@navjeevanalone1</a >
+          </p>
+          <button class="btn" id="reload"> Ask again!</button>
+      `;
 let size = 1;
 noBtn.addEventListener('mouseover', movenoBtnToRandomPosition);
 
@@ -27,7 +30,7 @@ function movenoBtnToRandomPosition() {
     noBtn.style.padding = "5rem"
     noBtn.style.transform = `scale(${size})`
     if (size != 0)
-        size -=0.05;
+        size -= 0.02;
 }
 const buttonYes = document.getElementById('yes');
 const image = document.getElementById('gif');
@@ -60,7 +63,7 @@ function blockDevTools() {
     // This is a simple and not very effective way to discourage opening DevTools
     document.onkeydown = function (e) {
         if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0)))) {
-            alert('Developer tools are blocked on this page');
+            alert('If You are mad, I am your dad');
             return false;
         }
     }
@@ -74,4 +77,10 @@ function displayFooter() {
     container.classList.add("end-message")
     bodyElement.style.background = "var(--black)"
     container.innerHTML = endMessageStr;
+    const reloadBtn = document.querySelector('#reload');
+    reloadBtn.addEventListener("click", () => {
+        window.location.reload()
+        console.log("first")
+
+    })
 }
