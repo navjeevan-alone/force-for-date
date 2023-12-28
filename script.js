@@ -56,8 +56,11 @@ function handleYesClick() {
     yesBtn.remove();
     noBtn.remove();
     // removeElements()
-    setTimeout(displayEndMessage, 3000);
+    // bodyElement.cursor = `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewport="0 0 32 32" style="fill:black;font-size:24px;"><text y="50%" x="50%" dy=".35em" text-anchor="middle" style="font-family:Arial;">😃</text></svg>'), auto;`
+    document.body.cursor = `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewport="0 0 32 32" style="fill:black;font-size:24px;"><text y="50%" x="50%" dy=".35em" text-anchor="middle" style="font-family:Arial;">😃</text></svg>'), auto;`
 }
+
+
 // function removeElements() {
 
 // }
