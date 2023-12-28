@@ -1,8 +1,15 @@
 
 const noBtn = document.querySelector('.btn-no-wrapper');
+const yesBtn = document.querySelector('#yes');
 
 const title = document.querySelector(".title")
 const bodyElement = document.body;
+const imgSrc = {
+    happy: "",
+    sad: "",
+    thanks: ""
+}
+let gifSrc = imgSrc.happy;
 const container = document.querySelector(".container")
 const endMessageStr = `<p>Jst developer things!!!</p>
       <p>Made with 💖 & 😀</p>
@@ -44,6 +51,12 @@ buttonYes.addEventListener('click', () => {
     setTimeout(displayFooter, 3000);
 
 });
+noBtn.addEventListener("click", () => {
+
+    alert("helo")
+})
+
+
 function disableRightClick() {
     document.addEventListener('contextmenu', function (event) {
         event.preventDefault();
@@ -69,9 +82,9 @@ function blockDevTools() {
     }
 }
 
-// disableRightClick();
-// disableKeyboardShortcuts();
-// blockDevTools();
+disableRightClick();
+disableKeyboardShortcuts();
+blockDevTools();
 
 function displayFooter() {
     container.classList.add("end-message")
