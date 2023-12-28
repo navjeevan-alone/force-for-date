@@ -55,9 +55,10 @@ function handleYesClick() {
     gif.src = imgSrc.ifYes;
     yesBtn.remove();
     noBtn.remove();
-    // removeElements()
-    // bodyElement.cursor = `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewport="0 0 32 32" style="fill:black;font-size:24px;"><text y="50%" x="50%" dy=".35em" text-anchor="middle" style="font-family:Arial;">😃</text></svg>'), auto;`
-    document.body.cursor = `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewport="0 0 32 32" style="fill:black;font-size:24px;"><text y="50%" x="50%" dy=".35em" text-anchor="middle" style="font-family:Arial;">😃</text></svg>'), auto;`
+    bodyElement.style.cursor = "pointer"
+    bodyElement.style.cursor = ` url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewport="0 0 32 32" style="fill:black;font-size:24px;"><text y="50%" x="50%" dy=".35em" text-anchor="middle" style="font-family:Arial;">😃</text></svg>'), auto`
+
+    setTimeout(displayEndMessage, 3000);
 }
 
 
