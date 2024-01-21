@@ -41,7 +41,11 @@ function movenoBtnToRandomPosition() {
 }
 
 function handleNoClick() {
-    title.innerHTML = "You broke my heart 💔";
+    title.innerHTML = `You broke my heart 💔 </br>
+    <p>मुसाफ़िर हैं हम भी मुसाफ़िर हो तुम भी </br>
+किसी मोड़ पर फिर मुलाक़ात होगी 
+</p >`;
+
     alert("You clicked No! That's not fair.");
     gif.src = imgSrc.ifNo;
     yesBtn.innerText = "Please say yes!!";
