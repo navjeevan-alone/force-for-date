@@ -41,7 +41,10 @@ function movenoBtnToRandomPosition() {
 }
 
 function handleNoClick() {
-    title.innerHTML = "You broke my heart 💔";
+    title.innerHTML = `You broke my heart 💔 </br>
+    <p>मुसाफ़िर हैं हम भी मुसाफ़िर हो तुम भी </br>
+किसी मोड़ पर फिर मुलाक़ात होगी 
+</p >`;
     alert("You clicked No! That's not fair.");
     gif.src = imgSrc.ifNo;
     yesBtn.innerText = "Please say yes!!";
@@ -77,6 +80,7 @@ function displayEndMessage() {
 
 function disableRightClick() {
     document.addEventListener('contextmenu', event => event.preventDefault());
+    alert("Don't Play Smart \nIf You are mad, I am your dad");
 }
 
 function disableKeyboardShortcuts() {
@@ -90,7 +94,7 @@ function disableKeyboardShortcuts() {
 function blockDevTools() {
     document.onkeydown = function (e) {
         if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0))) {
-            alert('If You are mad, I am your dad');
+            alert("Don't Play Smart \nIf You are mad, I am your dad");
             return false;
         }
     };
